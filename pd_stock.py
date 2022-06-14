@@ -10,16 +10,21 @@ name=[
     "7203.T"
 
 ]
+com_name=[
+    "dow_average",
+    "APPLE",
+    "TOYOTA"
+]
 
 
-def make_file(df,name):
-    fn='output_files/' +  name + '_dow.csv'
+def make_file(df,com_name):
+    fn='output_files/' + com_name + '.csv'
     df.to_csv(fn)
 
 def work():
     for i in range(len(name)):
         df=data.DataReader(name[i],"yahoo")
-        make_file(df,name[i])
+        make_file(df,com_name[i])
 
 def git():
     os.system('git add .')
