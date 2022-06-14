@@ -7,13 +7,25 @@ import os
 name=[
     "^DJI",
     "AAPL",
-    "7203.T"
+    "7203.T",
+    "6758.T",
+    "5032.T",
+    "AMZN",
+    "TSLA",
+    "GOOGL",
+    "NFLX"
 
 ]
 com_name=[
     "dow_average",
     "APPLE",
-    "TOYOTA"
+    "TOYOTA",
+    "SONY",
+    "Anycolor",
+    "Amazon",
+    "Tesla",
+    "Alphabet",
+    "Netflix"
 ]
 
 
@@ -31,7 +43,7 @@ def git():
     td=datetime.date.today()
     d1=td.strftime("%y-%m-%d")
     gcm='git commit -m ' + d1
-    os.system(gcm)
+    #os.system(gcm)
 
 
 def main():
