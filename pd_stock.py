@@ -4,16 +4,22 @@ import datetime
 from pandas_datareader import data
 import os
 
+name=[
+    "^DJI",
+    "AAPL",
+    "7203.T"
+
+]
+
 
 def make_file(df,name):
     fn='output_files/' +  name + '_dow.csv'
     df.to_csv(fn)
 
 def work():
-    name='yahoo'
-    df=data.DataReader("^DJI",name)
-    make_file(df,name)
-    print(df)
+    for i in range(len(name)):
+        df=data.DataReader(name[i],"yahoo")
+        make_file(df,name[i])
 
 def git():
     os.system('git add .')
