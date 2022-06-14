@@ -6,7 +6,7 @@ import os
 
 
 def make_file(df,name):
-    fn='output_files/' +  name + 'dow.csv'
+    fn='output_files/' +  name + '_dow.csv'
     df.to_csv(fn)
 
 def work():
