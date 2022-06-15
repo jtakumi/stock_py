@@ -13,7 +13,13 @@ name=[
     "AMZN",
     "TSLA",
     "GOOGL",
-    "NFLX"
+    "NFLX",
+    "CRM",
+    "MSFT",
+    "META",
+    "7259.T",
+    "TTM",
+    "1584.T"
 
 ]
 com_name=[
@@ -25,7 +31,13 @@ com_name=[
     "Amazon",
     "Tesla",
     "Alphabet",
-    "Netflix"
+    "Netflix",
+    "Salesforce",
+    "MicroSoft",
+    "MetaPlatforms",
+    "アイシン精機",
+    "TataMotors",
+    "Samsung"
 ]
 
 
